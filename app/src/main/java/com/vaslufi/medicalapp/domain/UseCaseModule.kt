@@ -1,5 +1,7 @@
 package com.vaslufi.medicalapp.domain
 
+import com.vaslufi.medicalapp.domain.usecase.CalculateLimitedDosageUseCase
+import com.vaslufi.medicalapp.domain.usecase.CalculateLimitedDosageUseCaseImpl
 import com.vaslufi.medicalapp.domain.usecase.CalculateRemainingDoseUseCase
 import com.vaslufi.medicalapp.domain.usecase.CalculateRemainingDoseUseCaseImpl
 import com.vaslufi.medicalapp.domain.usecase.CalculateTotalDoseInLast24HoursUseCase
@@ -43,4 +45,7 @@ abstract class UseCaseModule {
 
     @Binds
     abstract fun bindCheckSevereConditionsUseCase(implementation: CheckSevereConditionsUseCaseImpl): CheckSevereConditionsUseCase
+
+    @Binds
+    abstract fun bindCalculateLimitedDosageUseCase(implementation: CalculateLimitedDosageUseCaseImpl): CalculateLimitedDosageUseCase
 }
