@@ -2,6 +2,8 @@ package com.vaslufi.medicalapp.domain
 
 import com.vaslufi.medicalapp.domain.usecase.CheckAgeEligibilityUseCase
 import com.vaslufi.medicalapp.domain.usecase.CheckAgeEligibilityUseCaseImpl
+import com.vaslufi.medicalapp.domain.usecase.CheckCheckInTimeTooEarlyUseCase
+import com.vaslufi.medicalapp.domain.usecase.CheckCheckInTimeTooEarlyUseCaseImpl
 import com.vaslufi.medicalapp.domain.usecase.CheckHighTemperatureUseCase
 import com.vaslufi.medicalapp.domain.usecase.CheckHighTemperatureUseCaseImpl
 import com.vaslufi.medicalapp.domain.usecase.CheckLowTemperatureUseCase
@@ -16,6 +18,9 @@ import dagger.hilt.components.SingletonComponent
 @Module
 @InstallIn(SingletonComponent::class)
 abstract class UseCaseModule {
+
+    @Binds
+    abstract fun bindCheckCheckInTimeTooEarlyUseCase(implementation: CheckCheckInTimeTooEarlyUseCaseImpl): CheckCheckInTimeTooEarlyUseCase
 
     @Binds
     abstract fun bindCheckLowTemperatureUseCase(implementation: CheckLowTemperatureUseCaseImpl): CheckLowTemperatureUseCase
