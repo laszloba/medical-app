@@ -4,6 +4,8 @@ import com.vaslufi.medicalapp.domain.usecase.CheckHighTemperatureUseCase
 import com.vaslufi.medicalapp.domain.usecase.CheckHighTemperatureUseCaseImpl
 import com.vaslufi.medicalapp.domain.usecase.CheckLowTemperatureUseCase
 import com.vaslufi.medicalapp.domain.usecase.CheckLowTemperatureUseCaseImpl
+import com.vaslufi.medicalapp.domain.usecase.CheckSevereConditionsUseCase
+import com.vaslufi.medicalapp.domain.usecase.CheckSevereConditionsUseCaseImpl
 import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn
@@ -18,4 +20,7 @@ abstract class UseCaseModule {
 
     @Binds
     abstract fun bindCheckHighTemperatureUseCase(implementation: CheckHighTemperatureUseCaseImpl): CheckHighTemperatureUseCase
+
+    @Binds
+    abstract fun bindCheckSevereConditionsUseCase(implementation: CheckSevereConditionsUseCaseImpl): CheckSevereConditionsUseCase
 }
