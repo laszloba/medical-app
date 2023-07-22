@@ -1,5 +1,7 @@
 package com.vaslufi.medicalapp.domain
 
+import com.vaslufi.medicalapp.domain.usecase.CalculateTotalDoseInLast24HoursUseCase
+import com.vaslufi.medicalapp.domain.usecase.CalculateTotalDoseInLast24HoursUseCaseImpl
 import com.vaslufi.medicalapp.domain.usecase.CheckAgeEligibilityUseCase
 import com.vaslufi.medicalapp.domain.usecase.CheckAgeEligibilityUseCaseImpl
 import com.vaslufi.medicalapp.domain.usecase.CheckCheckInTimeTooEarlyUseCase
@@ -27,6 +29,9 @@ abstract class UseCaseModule {
 
     @Binds
     abstract fun bindCheckHighTemperatureUseCase(implementation: CheckHighTemperatureUseCaseImpl): CheckHighTemperatureUseCase
+
+    @Binds
+    abstract fun bindCalculateTotalDoseInLast24HoursUseCase(implementation: CalculateTotalDoseInLast24HoursUseCaseImpl): CalculateTotalDoseInLast24HoursUseCase
 
     @Binds
     abstract fun bindCheckAgeEligibilityUseCase(implementation: CheckAgeEligibilityUseCaseImpl): CheckAgeEligibilityUseCase
