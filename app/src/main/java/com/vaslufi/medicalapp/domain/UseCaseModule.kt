@@ -1,5 +1,7 @@
 package com.vaslufi.medicalapp.domain
 
+import com.vaslufi.medicalapp.domain.usecase.CheckAgeEligibilityUseCase
+import com.vaslufi.medicalapp.domain.usecase.CheckAgeEligibilityUseCaseImpl
 import com.vaslufi.medicalapp.domain.usecase.CheckHighTemperatureUseCase
 import com.vaslufi.medicalapp.domain.usecase.CheckHighTemperatureUseCaseImpl
 import com.vaslufi.medicalapp.domain.usecase.CheckLowTemperatureUseCase
@@ -20,6 +22,9 @@ abstract class UseCaseModule {
 
     @Binds
     abstract fun bindCheckHighTemperatureUseCase(implementation: CheckHighTemperatureUseCaseImpl): CheckHighTemperatureUseCase
+
+    @Binds
+    abstract fun bindCheckAgeEligibilityUseCase(implementation: CheckAgeEligibilityUseCaseImpl): CheckAgeEligibilityUseCase
 
     @Binds
     abstract fun bindCheckSevereConditionsUseCase(implementation: CheckSevereConditionsUseCaseImpl): CheckSevereConditionsUseCase
