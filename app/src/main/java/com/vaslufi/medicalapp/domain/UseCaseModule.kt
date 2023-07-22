@@ -1,5 +1,7 @@
 package com.vaslufi.medicalapp.domain
 
+import com.vaslufi.medicalapp.domain.usecase.CalculateDosageUseCase
+import com.vaslufi.medicalapp.domain.usecase.CalculateDosageUseCaseImpl
 import com.vaslufi.medicalapp.domain.usecase.CalculateDoseRangeUseCase
 import com.vaslufi.medicalapp.domain.usecase.CalculateDoseRangeUseCaseImpl
 import com.vaslufi.medicalapp.domain.usecase.CalculateLimitedDosageUseCase
@@ -26,6 +28,9 @@ import dagger.hilt.components.SingletonComponent
 @Module
 @InstallIn(SingletonComponent::class)
 abstract class UseCaseModule {
+
+    @Binds
+    abstract fun bindCalculateDosageUseCase(implementation: CalculateDosageUseCaseImpl): CalculateDosageUseCase
 
     @Binds
     abstract fun bindCheckCheckInTimeTooEarlyUseCase(implementation: CheckCheckInTimeTooEarlyUseCaseImpl): CheckCheckInTimeTooEarlyUseCase
