@@ -12,6 +12,15 @@
     <string name="home_message_dosage_recorded">Dosage Recorded. Please wait for %1$s until %2$s, and then we can determine if you can take another dose or not. In the meantime, you can still use the check-in form if you want.</string>
     <string name="home_message_take_dose_message">Take %s of Paracetamol orally.</string>
 
+    <string name="dosage_record_instruction_label">Record taken amount:</string>
+    <string name="dosage_record_instruction_placeholder">Enter the amount taken</string>
+    <string name="dosage_record_dosage_unit">mg</string>
+    <string name="dosage_record_record_button">Record</string>
+    <string name="dosage_record_record_button_icon_content_description">Record</string>
+    <string name="dosage_record_error_less_than_minimum_amount">Input is less than the minimum amount (%s)</string>
+    <string name="dosage_record_error_more_than_maximum_amount">Input is more than the maximum amount (%s)</string>
+    <string name="dosage_record_error_exact_amount_needed">Please enter the exact amount: %s</string>
+
     <string name="check_in_question">Are you feeling better?</string>
     <string name="check_in_answer_yes">Yes</string>
     <string name="check_in_answer_no">No</string>
