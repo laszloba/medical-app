@@ -1,3 +1,46 @@
 <resources>
     <string name="app_name">Medical App</string>
+
+    <string name="common_error_invalid_input">Invalid input</string>
+
+    <string name="home_message_start">If you feel that you might have a high temperature, please measure it and fill out the form below.</string>
+    <string name="home_message_seek_medical_attention">Seek appropriate medical help based on your condition and stop taking the drug.</string>
+    <string name="home_message_max_limit_reached">You have reached the maximum dosage intake in the past 24 hours. Please check back later to see if you can take more.</string>
+    <string name="home_message_stop_treatment">As you are feeling better, please discontinue the treatment.</string>
+    <string name="home_message_no_treatment_needed">As your temperature is not high, no treatment is needed. If you feel unwell, please seek medical assistance.</string>
+    <string name="home_message_too_early_check_in">Please wait for %1$s until %2$s, and then we can determine if you can take another dose or not. In the meantime, you can still use the check-in form if you want.</string>
+    <string name="home_message_dosage_recorded">Dosage Recorded. Please wait for %1$s until %2$s, and then we can determine if you can take another dose or not. In the meantime, you can still use the check-in form if you want.</string>
+    <string name="home_message_take_dose_message">Take %s of Paracetamol orally.</string>
+
+    <string name="dosage_record_instruction_label">Record taken amount:</string>
+    <string name="dosage_record_instruction_placeholder">Enter the amount taken</string>
+    <string name="dosage_record_dosage_unit">mg</string>
+    <string name="dosage_record_record_button">Record</string>
+    <string name="dosage_record_record_button_icon_content_description">Record</string>
+    <string name="dosage_record_error_less_than_minimum_amount">Input is less than the minimum amount (%s)</string>
+    <string name="dosage_record_error_more_than_maximum_amount">Input is more than the maximum amount (%s)</string>
+    <string name="dosage_record_error_exact_amount_needed">Please enter the exact amount: %s</string>
+
+    <string name="check_in_question">Are you feeling better?</string>
+    <string name="check_in_answer_yes">Yes</string>
+    <string name="check_in_answer_no">No</string>
+    <string name="check_in_temperature_label">Temperature:</string>
+    <string name="check_in_temperature_placeholder">Enter your temperature</string>
+    <string name="check_in_check_in_button">Check in</string>
+    <string name="check_in_check_in_button_icon_content_description">Check in</string>
+
+    <string name="debug_card_title">Debug information</string>
+    <string name="debug_card_virtual_time_label">Virtual time: %s</string>
+    <string name="debug_card_advance_time_by_label">Advance time by:</string>
+    <string name="debug_card_advance_by_30m">30m</string>
+    <string name="debug_card_advance_by_1h">1h</string>
+    <string name="debug_card_advance_by_2h">2h</string>
+    <string name="debug_card_advance_by_4h">4h</string>
+    <string name="debug_card_patients_age_label">Patient\'s age: %s</string>
+    <string name="debug_card_set_patients_age_label">Set patient\'s age to:</string>
+    <string name="debug_card_set_patients_age_to_10">10</string>
+    <string name="debug_card_set_patients_age_to_12">12</string>
+    <string name="debug_card_set_patients_age_to_40">40</string>
+    <string name="debug_card_history_label">History:</string>
+    <string name="debug_card_reset_button">Reset</string>
 </resources>
