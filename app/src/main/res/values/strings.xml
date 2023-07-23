@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Medical App</string>
+
+    <string name="home_message_start">If you feel that you might have a high temperature, please measure it and fill out the form below.</string>
+    <string name="home_message_seek_medical_attention">Seek appropriate medical help based on your condition and stop taking the drug.</string>
+    <string name="home_message_max_limit_reached">You have reached the maximum dosage intake in the past 24 hours. Please check back later to see if you can take more.</string>
+    <string name="home_message_stop_treatment">As you are feeling better, please discontinue the treatment.</string>
+    <string name="home_message_no_treatment_needed">As your temperature is not high, no treatment is needed. If you feel unwell, please seek medical assistance.</string>
+    <string name="home_message_too_early_check_in">Please wait for %1$s until %2$s, and then we can determine if you can take another dose or not. In the meantime, you can still use the check-in form if you want.</string>
+    <string name="home_message_dosage_recorded">Dosage Recorded. Please wait for %1$s until %2$s, and then we can determine if you can take another dose or not. In the meantime, you can still use the check-in form if you want.</string>
+    <string name="home_message_take_dose_message">Take %s of Paracetamol orally.</string>
 </resources>
