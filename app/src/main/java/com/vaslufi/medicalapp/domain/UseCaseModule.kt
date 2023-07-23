@@ -16,6 +16,8 @@ import com.vaslufi.medicalapp.domain.usecase.CheckCheckInTimeTooEarlyUseCase
 import com.vaslufi.medicalapp.domain.usecase.CheckCheckInTimeTooEarlyUseCaseImpl
 import com.vaslufi.medicalapp.domain.usecase.CheckHighTemperatureUseCase
 import com.vaslufi.medicalapp.domain.usecase.CheckHighTemperatureUseCaseImpl
+import com.vaslufi.medicalapp.domain.usecase.CheckInUseCase
+import com.vaslufi.medicalapp.domain.usecase.CheckInUseCaseImpl
 import com.vaslufi.medicalapp.domain.usecase.CheckLowTemperatureUseCase
 import com.vaslufi.medicalapp.domain.usecase.CheckLowTemperatureUseCaseImpl
 import com.vaslufi.medicalapp.domain.usecase.CheckSevereConditionsUseCase
@@ -31,6 +33,9 @@ abstract class UseCaseModule {
 
     @Binds
     abstract fun bindCalculateDosageUseCase(implementation: CalculateDosageUseCaseImpl): CalculateDosageUseCase
+
+    @Binds
+    abstract fun bindCheckInUseCase(implementation: CheckInUseCaseImpl): CheckInUseCase
 
     @Binds
     abstract fun bindCheckCheckInTimeTooEarlyUseCase(implementation: CheckCheckInTimeTooEarlyUseCaseImpl): CheckCheckInTimeTooEarlyUseCase
