@@ -28,4 +28,19 @@
     <string name="check_in_temperature_placeholder">Enter your temperature</string>
     <string name="check_in_check_in_button">Check in</string>
     <string name="check_in_check_in_button_icon_content_description">Check in</string>
+
+    <string name="debug_card_title">Debug information</string>
+    <string name="debug_card_virtual_time_label">Virtual time: %s</string>
+    <string name="debug_card_advance_time_by_label">Advance time by:</string>
+    <string name="debug_card_advance_by_30m">30m</string>
+    <string name="debug_card_advance_by_1h">1h</string>
+    <string name="debug_card_advance_by_2h">2h</string>
+    <string name="debug_card_advance_by_4h">4h</string>
+    <string name="debug_card_patients_age_label">Patient\'s age: %s</string>
+    <string name="debug_card_set_patients_age_label">Set patient\'s age to:</string>
+    <string name="debug_card_set_patients_age_to_10">10</string>
+    <string name="debug_card_set_patients_age_to_12">12</string>
+    <string name="debug_card_set_patients_age_to_40">40</string>
+    <string name="debug_card_history_label">History:</string>
+    <string name="debug_card_reset_button">Reset</string>
 </resources>
