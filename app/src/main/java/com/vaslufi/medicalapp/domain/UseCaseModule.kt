@@ -22,6 +22,8 @@ import com.vaslufi.medicalapp.domain.usecase.CheckLowTemperatureUseCase
 import com.vaslufi.medicalapp.domain.usecase.CheckLowTemperatureUseCaseImpl
 import com.vaslufi.medicalapp.domain.usecase.CheckSevereConditionsUseCase
 import com.vaslufi.medicalapp.domain.usecase.CheckSevereConditionsUseCaseImpl
+import com.vaslufi.medicalapp.domain.usecase.FormatRemainingTimeUseCase
+import com.vaslufi.medicalapp.domain.usecase.FormatRemainingTimeUseCaseImpl
 import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn
@@ -63,4 +65,7 @@ abstract class UseCaseModule {
 
     @Binds
     abstract fun bindCalculateDoseRangeUseCase(implementation: CalculateDoseRangeUseCaseImpl): CalculateDoseRangeUseCase
+
+    @Binds
+    abstract fun bindFormatRemainingTimeUseCase(implementation: FormatRemainingTimeUseCaseImpl): FormatRemainingTimeUseCase
 }
